@@ -1,13 +1,11 @@
 package ru.netology.cardTest.data;
 
-
 import com.github.javafaker.Faker;
 import lombok.experimental.UtilityClass;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.Locale;
-
 
 @UtilityClass
 public class DataGenerator {

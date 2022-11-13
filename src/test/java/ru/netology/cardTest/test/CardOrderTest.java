@@ -1,10 +1,8 @@
 package ru.netology.cardTest.test;
 
 import com.codeborne.selenide.Condition;
-import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.logevents.SelenideLogger;
 import io.qameta.allure.selenide.AllureSelenide;
-import lombok.Data;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
@@ -15,13 +13,10 @@ import ru.netology.cardTest.data.DataGenerator;
 
 import java.time.Duration;
 
-import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selectors.withText;
 import static com.codeborne.selenide.Selenide.*;
 
-
-
-public class cardOrderTest {
+public class CardOrderTest {
 
     @BeforeAll
     static void setUpAll() {
@@ -32,7 +27,6 @@ public class cardOrderTest {
     static void tearDownAll() {
         SelenideLogger.removeListener("allure");
     }
-
 
     @BeforeEach
     void setUp() {
